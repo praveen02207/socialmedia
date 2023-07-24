@@ -35,9 +35,7 @@ const AddForm = ({onPostAdded}) => {
         id: userPost.length + 1 || "",
         userName: inputs.userName || "",
         postContent: inputs.postContent || "",
-        likes: inputs.likes || "",
-        comments: inputs.comments || "",
-       
+        likes: '0' || ""
       };
 
       setUserPost([...userPost, postDetail]);
@@ -67,13 +65,7 @@ const AddForm = ({onPostAdded}) => {
     } else if (!inputs.postContent) {
       valid = false;
       error["postContent"] = "Please enter your post content!";
-    } else if (!inputs.likes || isNaN(inputs.likes)) {
-      valid = false;
-      error["likes"] = "Please enter a valid number of likes!";
-    } else if (!inputs.comments) {
-      valid = false;
-      error["comments"] = "Please enter a valid number of comments!";
-    }
+    } 
 
     setErrors(error);
     return valid;
@@ -123,7 +115,7 @@ const AddForm = ({onPostAdded}) => {
               )}
             </div>
 
-            <div className="mb-3">
+            {/* <div className="mb-3">
               <label className="form-label">Likes</label>
 
               <input
@@ -155,7 +147,7 @@ const AddForm = ({onPostAdded}) => {
               {errors.comments && (
                 <div className="text-danger"> {errors.comments}</div>
               )}
-            </div>
+            </div> */}
 
             <div className="text-center">
               <button type="submit" className="btn btn-primary">

@@ -81,11 +81,7 @@ const NewPosts = () => {
                     <p>{item.likes} likes</p>
                   </div>
 
-                  <div>
-                    <p>
-                      <strong>{item.userName}</strong> {item.comments}{" "}
-                    </p>
-                  </div>
+                 
                 </section>
               </div>
             ))}
