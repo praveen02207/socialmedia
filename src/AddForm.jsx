@@ -115,39 +115,7 @@ const AddForm = ({onPostAdded}) => {
               )}
             </div>
 
-            {/* <div className="mb-3">
-              <label className="form-label">Likes</label>
-
-              <input
-                className="form-control"
-                type="number"
-                placeholder="Enter no of likes"
-                name="likes"
-                value={inputs.likes || ""}
-                onChange={handleChange}
-              />
-
-              {errors.likes && (
-                <div className="text-danger"> {errors.likes}</div>
-              )}
-            </div>
-
-            <div className="mb-3">
-              <label className="form-label">Comments</label>
-
-              <input
-                className="form-control"
-                type="text"
-                placeholder="Enter your comment"
-                name="comments"
-                value={inputs.comments || ""}
-                onChange={handleChange}
-              />
-
-              {errors.comments && (
-                <div className="text-danger"> {errors.comments}</div>
-              )}
-            </div> */}
+          
 
             <div className="text-center">
               <button type="submit" className="btn btn-primary">
